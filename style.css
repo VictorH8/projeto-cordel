@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Passion+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+
+:root {
+  --fonte01: Arial, Helvetica, sans-serif;
+  --fonte02: "Passion One", sans-serif;
+  --fonte03: "Sriracha", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+  font-family: var(--fonte01);
+}
+
+header {
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding-top: 50px;
+}
+
+header > h1 {
+  font-variant: small-caps;
+  font-family: var(--fonte02);
+  font-size: 14vw;
+}
+
+header > p {
+  padding-bottom: 50px;
+  font-size: 2vw;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+
+section {
+  font-family: var(--fonte03);
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  padding-left: 30px;
+  line-height: 2em;
+  font-size: 3.5vw;
+}
+
+section.normal {
+  background-color: white;
+}
+
+section.imagem1 {
+  background-image: url(img/background001.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-attachment: fixed;
+  text-shadow: 2px 1px 0px black;
+  box-shadow: inset 6px 6px 13px 0px black;
+}
+
+section.imagem2 {
+  background-image: url(img/background002.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: right center;
+  text-shadow: 2px 1px 0px black;
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.596);
+}
+
+section.imagem1 p {
+  background-color: rgba(32, 31, 31, 0.329);
+  color: white;
+  display: inline-block;
+  padding: 15px;
+}
+
+section.imagem2 p {
+  background-color: rgba(32, 31, 31, 0.61);
+  color: white;
+  display: inline-block;
+  padding: 15px;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 10px;
+}
+
+a:hover {
+  border-bottom: 2px solid white;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
